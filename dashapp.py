@@ -12,7 +12,7 @@ with open("vectorizer.pkl", "rb") as f:
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-
+server=app.server
 # Define the layout
 app.layout = html.Div(
     style={'textAlign': 'center', 'width': '50%', 'margin': 'auto'},
